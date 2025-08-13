@@ -76,6 +76,8 @@ You can configure the LSL output sampling rate through the GUI:
 ### Main Window Layout
 
 The Data Control Center features a two-column layout:
+<img width="447" height="293" alt="image" src="https://github.com/user-attachments/assets/e299c685-52ae-4c06-8265-8e08158176bc" />
+
 
 #### Left Column: UDP Input
 - **Start/Stop UDP Listening** button (red when stopped, green when active)
@@ -88,6 +90,8 @@ The Data Control Center features a two-column layout:
 - **Start/Stop LSL Streams** button (red when stopped, green when active)
 
 ### Button States and Visual Feedback
+<img width="380" height="301" alt="image" src="https://github.com/user-attachments/assets/9f2f06c1-61fd-4380-9fb8-871afa85c24a" />
+
 
 - **Red buttons:** Service is stopped
 - **Green buttons:** Service is active
