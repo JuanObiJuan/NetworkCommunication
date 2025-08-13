@@ -1,10 +1,17 @@
+
 # NetworkCommunication
 
-This repository contains a series of scripts to help to move data between different pieces of software using python and UDP packages.
+This repository contains a set of tools and examples for clock synchronization, Lab Streaming Layer (LSL), and UDP communication. The main application that combines these techniques is the **Data Control Center**.
 
-Scripts are right now in development and are ment to be edited and adapted to your needs, so expect changes, additions or missing things bits on this documentation.
+Scripts are currently in development and are meant to be edited and adapted to your needs, so expect changes, additions, or missing pieces in this documentation.
 
-Data UDP format it will change depending on the requirements, by now you can find the initial json_schema and a json file example.
+For details about the main app, see [DATA_CONTROL_CENTER.md](./DATA_CONTROL_CENTER.md).
+
+You will also find initial JSON schemas and example files for UDP data formats, which may change depending on requirements.
+
+---
+
+## Examples
 
 ## Dependencies
 
@@ -56,9 +63,3 @@ You can configure if you want to embed timecode data in the streams and the samp
 After this script replicates the lsl streams, you can open any sofwtare LSL friendly to visualize or record streams. In this example I'm using Open Ephys:
 
 ![image](https://github.com/JuanObiJuan/NetworkCommunication/assets/1729541/31469604-e097-48a9-8c18-1a8e28f4192c)
-
-
-
-
-
-

@@ -42,6 +42,9 @@ pip install pylsl tkinter
    pip install pylsl
    ```
 3. **Navigate** to the UDP_Receiver directory
+   ```bash
+   cd UDP_Receiver
+   ```
 4. **Run the application:**
    ```bash
    python data_control_center.py
