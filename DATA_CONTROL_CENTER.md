@@ -146,7 +146,7 @@ The Data Control Center expects UDP packets with the following structure:
 **Requirements:**
 - Root key must be `"float"`
 - Values must be numeric (integers or floats)
-- Multiple float values can be included in a single packet
+- Multiple float values can be included in a single packet.
 
 #### Event Data Format
 **Port:** 8083
@@ -164,6 +164,10 @@ The Data Control Center expects UDP packets with the following structure:
 - Values are typically strings but can be any JSON-serializable type
 - Multiple events can be included in a single packet
 
+**⚠ Warning!**
+- One UDP packet can contain several floats, vector3 or events, you have to be sure (in machine sending making the udp packages) that the whole packet is not bigger than 65,535 bytes or you will find weird behaviour or even crashing.
+- Once you start the LSL relay, the sytem will create the enumerate the vector3 and float streams in the udp list, and create their correspoing lsl streams with matching names. After this moment, if a new udp streams are not going to be replicated in the lsl streams, are going to be ignored. IF you want ot include the new udp streams in your lsl relay, just Stop the LSL realy and Start again.
+
 ### Special Event Handling
 
 The application provides special processing for certain event keys:
@@ -171,6 +175,7 @@ The application provides special processing for certain event keys:
 - **`provant_id`:** Stored as a global variable with timestamp
 - **`level_title`:** Stored as a global variable
 - **All events:** Automatically removed after processing to prevent re-transmission
+- Last iteration was integrating a csv file creation for certain event keys.
 
 ## Usage Workflow
 
